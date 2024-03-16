@@ -3,7 +3,7 @@ const express = require('express');
 const { getAllTodo, deleteAllTodo, updataTodo, getTodo } = require('../../controllers/todo.controller');
 const { valUpdateTodo } = require('../../validators/todo.validator');
 
-const todoRouter = express.router();
+const todoRouter = express.Router();
 
 todoRouter.get('/todo',getAllTodo);
 
